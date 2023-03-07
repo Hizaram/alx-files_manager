@@ -44,7 +44,6 @@ function controllerRouting(app) {
     AuthController.getDisconnect(req, res);
   });
 
-  /**
   // Files Controller
 
   // should create a new file in DB and in disk
@@ -77,7 +76,6 @@ function controllerRouting(app) {
   router.get('/files/:id/data', (req, res) => {
     FilesController.getFile(req, res);
   });
-*/
 }
 
 export default controllerRouting;
