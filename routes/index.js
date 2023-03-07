@@ -1,7 +1,7 @@
 import express from 'express';
 import AppController from '../controllers/AppController';
 import UsersController from '../controllers/UsersController';
-// import AuthController from '../controllers/AuthController';
+import AuthController from '../controllers/AuthController';
 // import FilesController from '../controllers/FilesController';
 
 function controllerRouting(app) {
@@ -27,7 +27,6 @@ function controllerRouting(app) {
     UsersController.postNew(req, res);
   });
 
-  /**
   // should retrieve the user base on the token used
   router.get('/users/me', (req, res) => {
     UsersController.getMe(req, res);
@@ -45,6 +44,7 @@ function controllerRouting(app) {
     AuthController.getDisconnect(req, res);
   });
 
+  /**
   // Files Controller
 
   // should create a new file in DB and in disk
